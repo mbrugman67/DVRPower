@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>DVR Power</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src='/js/general.js'></script>
+    </head>
+    <body style='background-color:deepskyblue;'  onload='checkComms()'>
+        <div class='home'>
+            <div id='main' name='main' class='holder' style='width:340px;padding-left:10px;'>
+                <h3>DVR Power Manager</h3>
+                <div class='holder'>
+                    <span id='status' name='status'><i>...Getting Status...</i></span><br/>
+                    <input name='recheck' id='recheck' type='button' class='button' onclick='checkComms()' value='Re-check communications' disabled/>
+                </div>
+                <div class='holder'>
+                    Power reset status:<br/>
+                    <span id='resetting' name='resetting'><i>...Idle...</i></span>
+                    <input name='reset' id='reset' type='button' class='button' onclick='resetPower()' value='Reset Power (Right Fucking Now!)'/>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
